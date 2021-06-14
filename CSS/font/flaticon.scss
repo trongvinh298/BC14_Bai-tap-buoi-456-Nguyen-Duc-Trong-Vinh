@@ -1,0 +1,53 @@
+$flaticon-font: "flaticon";
+
+@font-face {
+    font-family: $flaticon-font;
+    src: url("./flaticon.ttf?8a7fed974d9a9a43c061665a8611bfff") format("truetype"),
+url("./flaticon.woff?8a7fed974d9a9a43c061665a8611bfff") format("woff"),
+url("./flaticon.woff2?8a7fed974d9a9a43c061665a8611bfff") format("woff2"),
+url("./flaticon.eot?8a7fed974d9a9a43c061665a8611bfff#iefix") format("embedded-opentype"),
+url("./flaticon.svg?8a7fed974d9a9a43c061665a8611bfff#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon-map: (
+    "startup": "\f101",
+    "confetti": "\f102",
+    "line-graph": "\f103",
+    "emoticon-square-smiling-face-with-closed-eyes": "\f104",
+    "coding": "\f105",
+    "rocket": "\f106",
+    "idea": "\f107",
+);
+
+.flaticon-startup:before {
+    content: map-get($flaticon-map, "startup");
+}
+.flaticon-confetti:before {
+    content: map-get($flaticon-map, "confetti");
+}
+.flaticon-line-graph:before {
+    content: map-get($flaticon-map, "line-graph");
+}
+.flaticon-emoticon-square-smiling-face-with-closed-eyes:before {
+    content: map-get($flaticon-map, "emoticon-square-smiling-face-with-closed-eyes");
+}
+.flaticon-coding:before {
+    content: map-get($flaticon-map, "coding");
+}
+.flaticon-rocket:before {
+    content: map-get($flaticon-map, "rocket");
+}
+.flaticon-idea:before {
+    content: map-get($flaticon-map, "idea");
+}
